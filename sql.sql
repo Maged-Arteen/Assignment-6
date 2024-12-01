@@ -1,4 +1,5 @@
 /*
+tables --> 
 Musician:
 Attributes: ID, Name, Address (Street, City), Phone Number.
 Instrument:
@@ -10,6 +11,11 @@ Attributes: Title (unique), Author.
 Producer:
 Attributes: Same as Musician (since a musician can also be a producer).
 
+relationship--> 
+ musician & instruments (many-to-many).
+ album & song (one-to-many).
+ song & musicians (many-to-many).
+ album &  producer (one-to-many).
 */
 
 --create database 
